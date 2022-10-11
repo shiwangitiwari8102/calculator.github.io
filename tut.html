@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced calculator</title>
+    <style>
+        input{
+            width:130px;
+            height:50px;
+            background-color: blue;
+            color:white;
+            font-size: 35px;
+            border-color:white;
+        }
+
+        #operations{
+            width:130px;
+            height:50px;
+            background-color: orange;
+            color:black;
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <!-- <h1 align="center">Advanced Calculator</h1> -->
+    <center>
+        <div style=" width:450px; height:615px; border:5px solid black; background-color:red"><br>
+  <div style=" width:400px;  border:5px solid green; background-color:black">
+    <form name="mainform">
+    <br>
+       <input type="text" name ="result" id="result"  style="width:392px; height:50px; border:2px solid black;
+       background-color: white;color: black;">
+       <br><br>
+       <input type="button" name="1" value="1" id="1" onclick="mainform.result.value+='1'">
+       <input type="button" name="2" value="2" id="2" onclick="mainform.result.value+='2'">
+       <input type="button" name="3" value="3" id="3" onclick="mainform.result.value+='3'">
+
+       <br><br>
+       <input type="button" name="4" value="4" id="4" onclick="mainform.result.value+='4'">
+       <input type="button" name="5" value="5" id="5" onclick="mainform.result.value+='5'">
+       <input type="button" name="6" value="6" id="6" onclick="mainform.result.value+='6'">
+       <br></br>
+
+       <input type="button" name="7" value="7" id="7" onclick="mainform.result.value+='7'">
+       <input type="button" name="8" value="8" id="8" onclick="mainform.result.value+='8'">
+       <input type="button" name="9" value="9" id="9" onclick="mainform.result.value+='9'">
+       <br><br>
+
+       <input type="button" name="0" value="0" id="0" onclick="mainform.result.value+='0'">
+       <input type="button" name="+" value="+" id="+" onclick="mainform.result.value+='+'">
+       <input type="button" name="-" value="-" id="-" onclick="mainform.result.value+='-'">
+       <br><br>
+
+       <input type="button" name="*" value="*" id="*" onclick="mainform.result.value+='*'">
+       <input type="button" name="/" value="/" id="/" onclick="mainform.result.value+='/'">
+       <input type="button" name="%" value="%" id="%" onclick="mainform.result.value+='%'">
+       <br><br>
+
+       <input type="button" name="=" value="=" id="="
+        onclick="mainform.result.value= eval(mainform.result.value)">
+       <input type="button" name="on" value="ON" id="on" style="background-color:green" onclick = "on()">
+       <input type="button" name="off" value="OFF" id="off" style="background-color:red" onclick= "off()">
+       <br><br>
+       <input type="button" name="clear" value="CLEAR ALL" id="clear" style="background-color:green; width:395px"
+       onclick="mainform.result.value =' '"><br><br>
+ </div>
+ </div>
+</form>
+ </center>
+ <script>
+
+function onn(){
+
+document.getElementById('result').disabled=fasle;
+
+document.getElementById('1').disabled=false; 
+document.getElementById('2').disabled=false;
+document.getElementById('3').disabled=false; 
+document.getElementById('4').disabled=false;
+document.getElementById('5').disabled=false;
+document.getElementById('6').disabled=false;
+document.getElementById('7').disabled=false;
+document.getElementById('8').disabled=false;
+document.getElementById('9').disabled=false;
+document.getElementById('0').disabled=true;
+
+document.getElementById('+').disabled=false; 
+document.getElementById('-').disabled=false;
+document.getElementById('*').disabled=false;
+document.getElementById('/').disabled=false;
+document.getElementById('%').disabled=false;
+document.getElementById('=').disabled=true;
+document.getElementById('clear').disabled=true;
+
+document.getElementById('on').disabled=false;
+
+}
+function off()
+{
+    
+    document.getElementById.mainform('result').disabled=true;
+
+    document.getElementById.mainform('1').disabled=true; 
+    document.getElementById.mainform('2').disabled=true;
+    document.getElementById.mainform('3').disabled=true; 
+    document.getElementById.mainform('4').disabled=true;
+    document.getElementById.mainform('5').disabled=true;
+    document.getElementById.mainform('6').disabled=true;
+    document.getElementById.mainform('7').disabled=true;
+    document.getElementById.mainform('8').disabled=true;
+    document.getElementById.mainform('9').disabled=true;
+    document.getElementById.mainform('0').disabled=true;
+    
+
+    document.getElementById.mainform('+').disabled=true; 
+    document.getElementById.mainform('-').disabled=true;
+    document.getElementById.mainform('*').disabled=true;
+    document.getElementById.mainform('/').disabled=true;
+    document.getElementById.mainform('%').disabled=true;
+    document.getElementById.mainform('=').disabled=true;
+    document.getElementById.mainform('clear').disabled=true;
+    
+    
+
+    document.getElementById.mainform('off').disabled=true;
+}
+
+ </script>
+    
+ 
+</body>
+</html>
+<!-- https://shiwangitiwari8102.github.io/Calculator/ -->
